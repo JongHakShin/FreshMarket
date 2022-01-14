@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="../Style.css" rel="stylesheet" type="text/css">
+    <link href="boardStyle.css" rel="stylesheet" type="text/css">
+    
+    <title>JSP Board</title>
+</head>
+<body>
+    <div class="pageName">사용자의 비밀번호를 입력해 주세요</div>
+    <form name="delFrm" method="post" action="delete.jsp">
+        <table>
+            <tr>
+                <td style="text-align: center;">
+                    <input name="pass" type="password" size="17" maxlength="15">
+                </td>
+            </tr>
+            <tr>
+                <td><hr></td>
+            </tr>
+            <tr>
+                <td class="buttons">
+                    <button type="button">삭제완료</button>&nbsp;&nbsp;
+                    <button type="reset">다시쓰기</button>&nbsp;&nbsp;
+                    <button type="button">뒤로</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
