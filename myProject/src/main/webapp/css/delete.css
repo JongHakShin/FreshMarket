@@ -1,0 +1,43 @@
+
+.delete_area {
+    position: relative;
+    width: 960px;
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.delete_border_top {
+    position: relative;
+    border-top: 1px solid #ECECEC;
+    margin-top: 30px;
+}
+
+.page_location {
+    position: relative;
+    top: -20px;
+    left: 470px;
+    font-size: 13px;
+    color: #8e8e91;
+}
+
+.delete_area form {
+    position: relative;
+    top: 120px;
+    margin: 0 auto;
+    padding: 50px;
+    width: 300px;
+    background-color: #ECECEC;
+    text-align: center;
+}
+input {
+    margin: 10px;
+    position: relative;
+    left: 40px;
+}
+.buttons {
+    position: relative;
+    left: 40px;
+    border-top: 1px solid #8e8e91;
+    padding: 10px 0;
+}

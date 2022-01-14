@@ -1,0 +1,48 @@
+.list_area {
+    width: 960px;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid red;
+    margin-bottom: 30px;
+}
+
+.list_border_top {
+    position: relative;
+    border-top: 1px solid #ECECEC;
+    margin-top: 30px;
+}
+
+.page_location {
+    position: relative;
+    top: -20px;
+    left: 470px;
+    font-size: 13px;
+    color: #8e8e91;
+}
+
+.list_area > h1{
+    position: relative;
+    margin-bottom: 30px;
+    left: 25px;
+}
+.notice_list{
+    margin: 0 auto;
+    width: 900px;
+}
+
+.notice_list th {
+    font-size: 20px;
+    border: 1px;
+    background-color: azure;
+}
+
+.notice_list td {
+    font-size: 16px;
+    padding-left: 50px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+
+

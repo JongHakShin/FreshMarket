@@ -1,0 +1,828 @@
+@charset "utf-8";
+/* 초기화 */
+html, body, div, header, nav, section, aside, article, footer, figure, figcaption, fieldset, legend,
+ul, ol, li, dl, dt, dd, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0; 
+} 
+
+ul,li {
+    list-style: none;
+}
+
+a:link {
+    color: #4f4f4f;
+    text-decoration: none;
+}
+
+fieldset {
+    border: 0;
+}
+
+/* 숨김 콘텐츠 */
+.hidden, legend {
+    position: absolute; 
+    left: -9999em; 
+}
+a:visited {
+    color: #8e8e91;
+    text-decoration: none;
+}
+
+a:hover, a:focus { 
+    color: #f00;
+    text-decoration: none;
+}
+
+
+ 
+ /* 기본 스타일 */
+ #page {
+    color: #000;
+    background-color: #fff;
+    font-size: 12px; 
+    line-height: 1.2; /*줄간격*/
+} 
+
+/* top 영역 시작*/
+header {
+  background-color: white;
+  height: 200px;
+}
+
+#topMenu {
+    background-color: black;
+}
+
+.topMenuArea {
+    position: relative;
+    text-align: right;
+    width: 960px;
+    margin: 0 auto;
+    
+}
+.topMenuList1 > li > a {
+    color: #fff;
+}
+.topMenuArea .topMenuList1 {
+    position: relative;
+    font-size: 0px;
+    margin-right: 25px;
+    right: 50px;
+    font-weight: bold;
+}
+
+.topMenuArea .topMenuList1 > li {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    margin-left: 30px;
+    font-size: 12px;
+    padding: 3px;
+    
+    
+   
+}
+
+.topMenuArea .topMenuList1 .dropDown { /* 소메뉴*/
+    border: 1px solid gray;
+    background-color: white;
+    position: absolute;
+    top: 18px;
+    width: 70px;
+    text-align: left;
+    right: -7px;
+    z-index: 10;
+    
+}
+
+.topMenuArea > .topMenuList1 .dropDown > li  {
+    padding: 5px;
+}
+
+.topMenuArea .topMenuList2 > .dropDown {
+    display: none;
+}
+
+.topMenuArea .topMenuList1 > li:hover > .dropDown {
+    display: block;
+}
+
+/* top 영역 끝*/
+
+
+/* 제목, 검색창 영역*/
+#titleAndSearch {
+    position: relative;
+    height: 120px;
+    width: 960px;
+    margin: 0 auto;
+}
+.mainlogo {
+    position: absolute;
+    left: 150px;
+    top: 20px;
+}
+
+.search {
+    position: absolute;
+    right: 50px;
+    top: 30px;
+}
+
+.search input {
+    padding: 10px 20px;
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: #F7F5F5;
+}
+
+.search .searchBtn {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #F7F5F5;
+}
+
+
+
+/* 제목, 검색창 영역 종료*/
+
+
+/* 메인 메뉴 영역 시작*/
+#mainMenu {
+    border: 1px solid gray;
+    height: 50px;
+    padding-right: 20px;
+}
+
+.mainMenuArea {
+    position: relative;
+    text-align: center;
+    width: 960px;
+    margin: 0 auto;
+
+}
+
+.mainMenuArea > ul {
+    font-size: 0;
+}
+
+.mainMenuArea > ul > li{
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 15px;
+   
+}
+
+.mainMenuArea a::before {
+    content: "│";
+    padding-right:24px;
+}
+
+.mainMenuArea li:first-child a::before {
+    content: "";
+   
+}
+.category1 { /*소메뉴*/
+    position: relative;
+    z-index: 10;
+    height: 150px;
+    background: white;
+    border: 1px solid gray;
+    position: absolute;
+    vertical-align: top;
+    width: 130px;
+    top: 40px;
+    left: 30px;
+    text-align: left;
+  
+}
+
+.category1 li {
+    margin: 15px;
+}
+
+.category1 {
+    display: none;
+    
+}
+
+.allCategory:hover .category1 {
+    display: block;
+   
+}
+.smallMenu {
+    border: 1px solid gray;
+    width: 140px;
+    position: absolute;
+    left: 120px;
+    top: -1px;
+    background: white;
+    font-size: 12px;
+    text-align: left;
+}
+.smallMenu a{
+    padding-top:  20px;
+    
+}
+
+.smallMenu {
+    display: none;
+}
+
+.category2 {
+    width: 110px;
+   
+}
+
+
+.category2:hover > .smallMenu {
+    display: block;
+    
+}
+
+/* 메인 메뉴 영역 끝*/
+
+/*회원가입 영역 시작*/
+#memberJoinTop {
+    position: relative;
+    border-top: 1px solid #ECECEC;
+    margin-top: 30px;
+}
+.memberJoin > .pageLocation {
+    position: relative;
+    top: -50px;
+    left: 0px;
+    font-size: 13px;
+    color: #8e8e91;
+    
+}
+.memberJoin {
+    width: 960px;
+    height: 500px;
+    margin: 30px auto 500px;
+   
+}
+
+.memberJoin > h1 {
+    font-size: 30px;
+}
+
+.enterInfo b{
+    color: red;
+}
+
+.memberJoin .enterInfo {
+    text-align: right;
+    font-size: 20px;
+}
+
+.memberJoin > .borderTop {
+    border-top: 2px solid #e0e0e0;
+}
+
+.memberJoinArea {
+    width: 700px;
+    margin: 0 auto;
+    border-top: 1px solid #202020;
+    margin-top: 50px;
+}
+
+.memberJoinArea > #memberTypeForm {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.memberJoinArea > .memberType {
+   position: relative;
+   top: -25px;
+}
+
+#memberTypeForm > label{
+    position: relative;
+    top:-2px;
+}
+.basicInfo  .formSign {
+    position: relative;
+    float: right;
+    top: -30px;
+}
+
+.basicInfo  .require {
+    color: #f00;
+}
+.basicInfo p {
+    padding: 5px 0;
+   
+}
+.basicInfo > #joinForm {
+    border-top: 1px solid #4f4f4f;
+}
+
+.basicInfo .label {
+    width: 120px;
+    border-right: 3px solid #8e8e91;
+    display: inline-block;
+}
+
+
+.joinFormArea {
+    border-bottom:1px solid #8e8e91;
+    padding: 10px 0;
+    width: 700px;
+}
+
+
+
+
+/* 이메일 공간*/
+.emailArea {
+    position: relative;
+    border-bottom:1px solid #8e8e91;
+    padding: 10px 0;
+    height: 50px;
+}
+
+.emailArea > .labelEmail {
+    position: relative;
+    height: 40px;
+    width: 120px;
+    display: inline-block;
+    border-right: 3px solid #8e8e91;
+    padding-top: 15px;
+    
+   
+}
+.emailArea > #inputEmail {
+    position: relative;
+    top: -7px;
+}
+.emailArea > .consentA {
+    position: absolute;
+    top: 40px;
+    left: 125px;
+}
+
+.consentA > label {
+    position: relative;
+    top: -1px;
+    left: -2px;
+}
+
+.emailAddress {
+    position: absolute;
+    top: 16px;
+    left: 380px;
+}
+
+
+.phoneFormArea {
+    position: relative;
+    border-bottom: 1px solid #8e8e91;
+}
+.phoneFormArea > .labelPhone {
+    height: 40px;
+    width: 120px;
+    display: inline-block;
+    border-right: 3px solid #8e8e91;
+    margin: 11px 0 4px 0;
+    padding-top: 15px;
+    
+}
+
+.phoneFormArea > #tel {
+    position: relative;
+    top: -7px;
+} 
+
+
+.phoneFormArea > .consentB {
+    position: absolute;
+    top: 40px;
+    left: 125px;
+}
+.consentB > label {
+    position: relative;
+    top: -1px;
+    left: -2px;
+}
+    
+.addressFormArea {
+    position: relative;
+    border-bottom: 1px solid #8e8e91;
+    padding-top: 8px;
+    height: 90px;
+}
+.addressFormArea > .lableAddress{
+    height: 60px;
+    width: 120px;
+    display: inline-block;
+    border-right: 3px solid #8e8e91;
+    position: relative;
+    padding-top: 20px;
+  
+    
+}
+
+.addressFormArea > #zipcode {
+    position: relative;
+    top: -28px;
+  
+}
+
+.addressFormArea >.findZipcode {
+    position: relative;
+    top: -26px;
+}
+
+.addressFormArea > .findZipcode > a{
+    color: #202020;
+}
+
+.addressFormArea > #addressA {
+    position: absolute;
+    right: 116px;
+    top: 38px;
+    
+
+}
+.addressFormArea > #addressB {
+    position: absolute;
+    right: 116px;
+    top: 65px;
+}
+
+.recommend { 
+    margin-top: 40px;
+}
+
+.recommendArea {
+    position: relative;
+    border-top: 2px solid #202020;
+    border-bottom: 1px solid #8e8e91;
+    margin-top: 10px;
+    
+}
+
+
+
+.recommendArea label {
+    position: relative;
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+    border-right: 3px solid #8e8e91;
+}
+
+.recommendArea #recommendName {
+    position: absolute;
+    top: 13px;
+    left: 128px;
+}
+
+
+.btnJoinArea {
+    position: relative;
+    left: 230px;
+    top: 30px;
+}
+
+.btnJoinArea > .btnCancel {
+    padding: 20px 60px;
+    background-color: #fff;
+    border: 1px solid #8e8e91;
+    cursor: pointer;
+}
+
+.btnJoinArea > .btnOk {
+    padding: 20px 50px;
+    background-color: #FF2B2B;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #8e8e91;
+    cursor: pointer;
+}
+
+
+
+/*회원가입 영역 끝*/
+
+/*foorTop 영역*/
+#footerTop{
+    overflow: hidden;
+    background: #e0e0e0;
+}
+
+.footerTopArea {
+    width: 960px;
+    height: 250px;
+    margin: 0 auto;
+    font-size: 10px;
+
+   
+   
+    
+}
+/*  ServiceCenterArea 영역 시작*/
+.ServiceCenterArea {
+    
+    border-right: 2px solid #8e8e91;
+    float: left;
+    width: 310px;
+    position: relative;
+    margin-top: 10px;
+    
+   
+    
+}
+.ServiceCenterArea > .ServiceCenter > h1 {
+    margin: 30px 8px 25px;
+   
+}
+
+.ServiceCenter > h2 {
+    margin-left: 8px;
+}
+
+.ServiceCenter > .consulting {
+    margin: 15px 8px 5px;
+    line-height: 20px;
+
+}
+
+.consulting >  .deadline1 {
+    color: #8e8e91;
+}
+
+.ServiceCenter > .deadline2 {
+    border-top: 1px solid #8e8e91;
+    width: 210px;
+    margin: 5px 0 0 5px;
+    padding: 5px 0;
+}
+
+
+.ServiceCenterlink > .kakoBtn {
+    width: 110px;
+    height: 50px;
+    font-size: 10px;
+    position: absolute;
+    right: 20px;
+    top: 35px;
+    background-color: #FCE72B;
+    border-radius: 5px;
+    border: 1px solid #8e8e91;
+    cursor: pointer;
+}
+.ServiceCenterlink .kakoBtn > img {
+    position: relative;
+    left: 5px;
+    top: 15px;
+    width: 30px;
+    position: absolute;
+}
+
+.ServiceCenterlink .kakoBtn > h3 {
+    position: relative;
+    top: 17px;
+    left: 35px;
+    position: absolute;
+}
+
+.ServiceCenterlink > .questionBtn {
+    width: 110px;
+    height: 50px;
+    font-size: 10px;
+    position: absolute;
+    right: 20px;
+    top: 85px;
+    border-radius: 5px;
+    border: 1px solid #8e8e91;
+    cursor: pointer;
+}
+
+.ServiceCenterlink > .oftenQuestionBtn {
+    width: 110px;
+    height: 50px;
+    font-size: 10px;
+    position: absolute;
+    right: 20px;
+    top: 135px;
+    border-radius: 5px;
+    border: 1px solid #8e8e91;
+    cursor: pointer;
+}
+/*ServiceCenterArea 영역 끝*/
+
+/* accountArea영역 시작*/
+.accountArea {
+    position: relative;
+    
+    border-right: 2px solid #8e8e91;
+    float: left;
+    width: 330px;
+    height: 222px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.accountArea h1 {
+    margin: 30px 0 0 10px;
+}
+
+.nonghyup {
+    margin-left: 10px;
+}
+
+.nonghyup > img {
+    width: 100px;
+}
+
+.nonghyup > h1 {
+    position: relative;
+    top: -12px;
+    left: -10px;
+    display: inline-block;
+}
+.shinhan {
+    position: absolute;
+    top: 80px;
+}
+.shinhan > img {
+    position: relative;
+    width: 110px;
+    top: 2px;
+}
+
+.shinhan h1 {
+    position: relative;
+    top: -7px;
+    left: -10px;
+    display: inline-block;
+}
+
+.accountArea > .accountName {
+    color: #8e8e91;
+    padding-left: 10px;
+}
+
+.accountArea > .findBtn {
+    position: absolute;
+    padding: 10px;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 7px;
+    border: 1px solid #8e8e91;
+    cursor: pointer;
+
+}
+/* accountArea영역  끝*/
+
+/* notice영역 시작*/
+.notice{
+    position: relative;
+
+    float: left;
+    width: 310px;
+    height: 222px;
+    position: relative;
+    margin-top: 10px;
+}
+.notice > h2 {
+    font-size: 22px;
+    margin: 30px 0 10px 10px;
+}
+.notice table {
+    border-collapse: collapse;
+    margin-left: 10px;
+    
+}
+.notice td {
+    border-bottom: 1px solid #8e8e91;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 30px;
+    padding: 9px 0;
+}
+
+.notice td > a {
+    display: block;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.notice .date {
+    width: 70px;
+    padding-left: 9px;   
+}
+
+/* notice영역 끝*/
+
+/*footer영역 시작*/
+#footer {
+    background-color: #202020;
+}
+
+.footerArea {
+    position: relative;
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.footerArea li{
+    color: #fff;
+    line-height: 20px;
+}
+
+.footerArea .kcp{
+    position: absolute;
+    width: 110px;
+    top: 10px;
+    left: 0;
+   
+}
+
+.footerArea .koreaExpress > img{
+    position: absolute;
+    width: 130px;
+    top: 20px;
+    left: 120px;
+   
+}
+
+.guideInfo {
+    padding-top: 90px;
+}
+
+
+.footerArea a {
+    color: #fff;
+    
+}
+
+.email a {
+    color: #8e8e91;
+}
+
+
+.copyright {
+    color: #8e8e91;
+    
+}
+.guideLink {
+    position: absolute;
+    border-left:2px  solid #8e8e91;
+    top: 30px;
+    right: 162px;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+ .guide {
+    position: relative;
+    border: 2px solid #fff;
+    width: 130px;
+    padding: 5px;
+    margin: 5px 0 0px 10px;
+   
+}
+
+.guideLink a {
+    display: block;
+}
+
+
+.guideLink .home {
+    position: absolute;
+    border: 2px solid #fff;
+    width: 200px;
+    padding: 5px;
+    margin: 5px 0 0px 10px;
+    top: 0px;
+    left: 150px;
+    width: 130px;
+}
+
+.guideLink .top {
+    position: absolute;
+    border: 2px solid #fff;
+    width: 200px;
+    padding: 5px;
+    margin: 5px 0 0px 10px;
+    top: 34px;
+    left: 150px;
+    width: 130px;
+}
+
+/*footer영역 끝*/

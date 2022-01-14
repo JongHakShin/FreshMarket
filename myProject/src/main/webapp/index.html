@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshMarket</title>
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="js/slide.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="images/shurt_icon.ico">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- 헤더 영역 시작-->
+    <div id="page">
+        <header>
+            <!--Top Menu-->
+            <div id="topMenu">
+                <div class="topMenuArea">
+                    <ul class="topMenuList1">
+                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="join.html">회원가입</a></li>
+                        <li class="topMenuList2"><a href="#">마이페이지</a>
+                            <ul class="dropDown">
+                                <li><a href="#">주문조회</a></li>
+                                <li><a href="#">내정보수정</a></li>
+                                <li><a href="#">찜 리스트</a></li>
+                                <li><a href="#">1:1 문의</a></li>
+                            </ul>
+                        </li>
+                        <li class="topMenuList2"><a href="#">고객센터</a>
+                            <ul class="dropDown">
+                                <li><a href="board/list.jsp">공지사항</a></li>
+                                <li><a href="#">상품문의</a></li>
+                                <li><a href="#">상품후기</a></li>
+                                <li><a href="#">등업신청</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">장바구니</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--Top 메뉴 끝-->
+
+            <!--제목, 검색창 영역 시작-->
+            <div id="titleAndSearch">
+                <div class="mainlogo">
+                    <a href="index.html" class=""><img src="images/freshMarket.PNG" alt="mainlogo" width="400px" alt="freshMarket"></a>
+                </div>
+
+                <div class="search">
+                    <form action="search.jsp" method="get" id="searchForm" name="searchForm">
+                        <fieldset>
+                            <legend>검색 폼</legend>
+                            <input type="search" id="keyword" name="keyword" placeholder="검색어를 입력하세요" required/>
+                            <button type="submit" class="searchBtn"><img src="images/reading glasses.png" alt="search" width="23px"/></button>             
+                        </fieldset>
+                    </form>
+                </div>
+
+              
+            </div>
+
+            <!--제목, 검색창 영역 끝-->
+
+            <!--메인 메뉴 영역 시작-->
+            <nav id="mainMenu">
+                <div class="mainMenuArea">
+                    <h2 class="hidden">메인 메뉴</h2>
+                    <ul>
+                        <li class="allCategory"><a href="#">전체 카테고리</a>
+                            <ul class="category1">
+                                <li class="category2"><a href="#">과실류</a>
+                                    <ul class="smallMenu">
+                                        <li><a href="">과일</a></li>
+                                        <li><a href="">냉동/건과일</a></li>
+                                        <li><a href="">견과류</a></li>
+                                    </ul>
+                                </li>
+                                <li class="category2"><a href="#">채소류</a>
+                                    <ul class="smallMenu">
+                                        <li><a href="">뿌리채소</a></li>
+                                        <li><a href="">열매채소</a></li>
+                                        <li><a href="">앞줄기채소</a></li>
+                                        <li><a href="">버섯/나물류</a></li>
+                                    </ul>
+                                </li>
+                                <li class="category2"><a href="#">축산</a>
+                                    <ul class="smallMenu">
+                                        <li><a href="">닭고기/계란</a></li>
+                                        <li><a href="">돼지고기</a></li>
+                                        <li><a href="">소고기</a></li>
+                                        <li><a href="">기타 축산물</a></li>
+                                    </ul>
+                                </li>
+                                <li class="category2"><a href="#">수산</a>
+                                    <ul class="smallMenu">
+                                        <li><a href="">생선</a></li>
+                                        <li><a href="">해산류/어패류</a></li>
+                                        <li><a href="">건어물</a></li>
+                                        <li><a href="">김/해조류</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">신상품출시</a></li>
+                        <li><a href="#">인기상품</a></li>
+                        <li><a href="#">알뜰장보기</a></li>
+                        <li><a href="#">라이브</a></li>
+                        <li><a href="#">이벤트</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- 헤더 영역 종료-->
+
+        <!--메인이미지, 슬라이스 이미지 영역 시작-->
+        <div class="sliderArea">
+            <div class="animationCanvas"> 
+                <div class="sliderPanel">
+                    <img class="sliderImage" src="images/main_Image.png" alt="">
+                    <img class="sliderImage" src="images/fruits_image.jpg" alt="">
+                    <img class="sliderImage" src="images/vegetables-image.jpg" alt="">
+                    <img class="sliderImage" src="images/meet_image.jpg" alt=""> 
+                    <img class="sliderImage" src="images/seafood_image.jpg" alt="">
+                </div>
+                <div class="sliderTextPanel">
+                    <div class="sliderText">
+                        <h1 class="mainTitle">FreshMarket</h1>
+                        <div class="subTitle">신선식품 쇼핑몰 :)</div>
+                    </div>
+                    <div class="sliderText">
+                        <h2 class="title">깨끗하고 신선한 과일 :)</h2>
+                        <a href="#"><div class="purchase">구매하러가기</div></a>
+                    </div>
+                    <div class="sliderText">
+                        <h2 class="title">깨끗하고 신선한 채소 :)</h2>
+                        <a href="#"><div class="purchase">구매하러가기</div></a>
+                    </div>
+
+                    <div class="sliderText">
+                        <h2 class="title">깨끗하고 신선한 고기 :)</h2>
+                        <a href="#"><div class="purchase">구매하러가기</div></a>
+                    </div>
+
+                    <div class="sliderText">
+                        <h2 class="title">신선하고 싱싱한 해산물 :)</h2>
+                        <a href="#"><div class="purchase">구매하러가기</div></a>
+                    </div>
+                </div>
+                
+                <div class="controlPanelArea">
+                    <img class="leftControl" src="images/arrow1.png"/>
+                    <img class="rightControl" src="images/arrow2.png"/>
+                </div>
+            </div>
+        </div>
+     
+        <!--메인이미지, 슬라이스 이미지 영역 끝-->
+
+        <!--메인 컨텐츠 영역 시작-->
+        <div id="contentArea">
+
+                <!--Fresh sale 영역 시작-->
+                <section class="bestFoodArea">
+                    <h1>지금은 세일중</h1>
+                    <h1>지금이 구매 하실 기회 놓치지 마세요!</h1>
+                              
+                    <ul class="prd1">
+                        <li>
+                            <dl>
+                                <dt>오겹살 구이용 1kg 1팩</dt>
+                                <dd class="saleImg"><a href="#"><img src="images/meet1.jpg" alt="mawangBeefSet"></dd>
+                                <dd class="price">15,000원</dd>
+                                <dd class="discountPrice">12,800원</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <div class="discount1">SALE <br>15%</div>
+
+                    <ul class="prd1">    
+                        <li>
+                            <dl>
+                                <dt>해남 절임배추 20kg(12월도착) 6-9포기</dt>
+                                <dd class="saleImg"><a href="#"><img src="images/NapaCabbage.JPG" alt="NapaCabbage"></dd>
+                                <dd class="price">57,000원</dd>
+                                <dd class="discountPrice">38,190원</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <div class="discount2">SALE <br>33%</div>
+
+                    <ul class="prd1">    
+                        <li>
+                            <dl>
+                                <dt>천하일품 제주감귤 실중량9kg</dt>
+                                <dd class="saleImg"><a href="#"><img src="images/gyul.jpg" alt="gyul"></dd>
+                                <dd class="price">26,900원</dd>
+                                <dd class="discountPrice">12,000원</dd>
+                            </dl>
+                        </li>
+                    </ul> 
+                    <div class="discount3">SALE <br>44%</div>
+
+                    <ul class="prd2">    
+                        <li>
+                            <dl>
+                                <dt>마왕 소고기세트 1.45kg (냉장 소갈비살 300g x 2팩+냉장 소목등심 350g+냉장 부채살 300g+냉장 토시살 200g)</dt>
+                                <dd class="saleImg"><a href="#"><img src="images/sale1.PNG" alt="mawangBeefSet"></dd>
+                                <dd class="price">74,900원</dd>
+                                <dd class="discountPrice">67,900원</dd>
+                            </dl>
+                        </li>
+                    </ul> 
+                    <div class="discount4">SALE <br> 9%</div>
+
+                    <ul class="prd2">    
+                        <li>
+                            <dl>
+                                <dt>양 한마리세트 (양숄더랙 500g +양사각갈비 500g + 양꼬치 8개 + 쯔란 10g x 3팩)</dt>
+                                <dd class="saleImg"><a href="#"><img src="images/sale2.PNG" alt="lambSet"></dd>
+                                <dd class="price">39,900원</dd>
+                                <dd class="discountPrice">34,900원</dd>
+                            </dl>
+                        </li>
+                    </ul> 
+                    <div class="discount5">SALE <br>13%</div>
+
+                    <ul class="prd2">    
+                        <li>
+                            <dl>
+                                <dt>[와규 MB6+] 냉장 본갈비살 300g</dt>
+                                <dd class="saleImg"><a href="#"><img src="images/sale3.PNG" alt="boneRibs"></dd>
+                                <dd class="price">32,900원</dd>
+                                <dd class="discountPrice">18,900원</dd>
+                            </dl>
+                        </li>
+                    </ul> 
+                    <div class="discount6">SALE <br>18%</div>
+            </section>
+            <!--Fresh sale 영역 끝-->     
+            
+            <!--New product-->
+            <section id="newProduct">
+                <div class="newProductArea">
+                    <h1>신상품</h1>
+
+                    <ul class="newPrd1">    
+                        <li>
+                            <dl>
+                                <dt>[우리똥대지] 한돈 냉장 눈꽃삼겹살 300g</dt>
+                                <dd><a href="#"><img src="images/handon.JPG"></dd>
+                                <dd class="discountPrice">13,500원</dd>
+                            </dl>
+                        </li>
+                    </ul> 
+
+                    <ul class="newPrd2">    
+                        <li>
+                            <dl>
+                                <dt>프리미엄 LA갈비 1.2kg</dt>
+                                <dd class><a href="#"><img src="images/meet3.JPG"></dd>
+                                <dd class="discountPrice">39,000원</dd>                      
+                            </dl>
+                        </li>
+                    </ul> 
+
+                    <ul class="newPrd3">    
+                        <li>
+                            <dl>
+                                <dt>[초신선] 생연어(필렛) 300g (2인분)</dt>
+                                <dd><a href="#"><img src="images/salmon.JPG" alt="salmon"></dd>
+                                <dd class="price">32,900원</dd>
+                                <dd class="discountPrice">18,900원</dd>
+                            </dl>
+                        </li>
+                    </ul> 
+                    <div class="discountSalmon">SALE<br> 30%</div>
+
+                    <ul class="newPrd2">    
+                        <li>
+                            <dl>
+                                <dt>[초신선] 캐나다산 활 랍스터 (700g내외)</dt>
+                                <dd><a href="#"><img src="images/Lobster.PNG" alt="Lobster"></dd>
+                                <dd class="price">41,000원</dd>
+                                <dd class="discountPrice">38,950원</dd>
+                            </dl>
+                        </li>            
+                    </ul> 
+                    <div class="discountLobster">SALE<br> 5%</div>
+
+                    <ul class="newPrd2">    
+                        <li>
+                            <dl>
+                                <dt>[초신선] 손질 장어 3종 (초생강,소스2종 증정)</dt>
+                                <dd class="saleImg"><a href="#"><img src="images/eel.PNG"></dd>
+                                <dd class="price">22,500원</dd>
+                                <dd class="discountPrice">20,250원</dd>
+                        </li>
+                    </ul> 
+                    <div class="discountEel">SALE<br> 10%</div>
+
+                    <ul class="newPrd2">    
+                        <li>
+                            <dl>
+                                <dt>[초신선] 통영 생굴 2kg 횟감용 통영중매인 직송 햇 생굴</dt>
+                                <dd class="saleImg"><a href="#"><img src="images/gul.PNG"></dd>
+                                    <dd class="discountPrice">39,900원</dd>
+                            </dl>
+                        </li>
+                    </ul>        
+                </div>
+            </section>  
+            <!--New product 끝-->
+        </div>
+
+        <a></a> <!--푸터 영역에 원인 모를 a태그가 지정돼서 여기에 a태그를 지정하니 사라짐 -->
+        <!--footerTop 영역 시작-->
+        <div id="footerTop">
+            <div class="footerTopArea">
+                <div class="ServiceCenterArea">
+                    <div class="ServiceCenter">
+                        <h1>고객센터</h1>
+                        <h2>1661-0000</h2>
+                        <div class="consulting">
+                            <h3>문자상담</h3> <h3>010-1234-5678</h3>
+                            <h3 class="deadline1">AM 10:00 ~ PM 17:00</h3>
+                            <h3 class="deadline1">토·일·공휴일 휴무</h3>
+                        </div>
+                        <div class="deadline2">
+                            <h3>당일출고 마감:오후3시 이전 결제완료건</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="ServiceCenterlink">
+                        <button class="kakoBtn">
+                            <img src="images/kakao.png" alt="kakao"/>
+                            <h3>프레시마켓</h3>
+                        </button>
+                        <button class="questionBtn">
+                            <h3>1:1문의 게시판 </h3>
+                        </button>
+                        <button class="oftenQuestionBtn">
+                            <h3>자주 묻는 질문</h3>
+                        </button>
+                    </div>
+                    
+                </div>
+               
+            
+                <div class="accountArea">
+                    <h1>입급계좌</h1>
+                    <div class="nonghyup">
+                        <img src="images/Nonghyup.png" alt="Nonghyup"/>
+                        <h1>111-0550-1111-12</h1>
+                    </div>
+                    <div class="shinhan">
+                        <img src="images/shinhan.png" alt="shinhan"/>
+                        <h1>110-121-775-225</h1>
+                    </div>
+                    <h1 class="accountName">예금주: 신종학 프레시마켓</h1>
+                    <button class="findBtn"><a href="#">입금자를 찾습니다.</a></button>
+                </div>
+
+                <div class="notice">
+                    <h2>공지사항</h2>                  
+                    <table>            
+                        <tr>
+                            <td><a href="#">상품 교환/반품 배송지 변경 안내 (2021.05 부터)</a></td>
+                            <td class="date">2021-4-27</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">전국 택배 없는 날_ 추석 배송 안내 </a></td>
+                            <td class="date">2021-8-27</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">프레시 마켓 회원등급정책 안내입니다. </a></td>
+                            <td class="date">2021-8-10</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">개인정보보호방침 변경에 따른 공지사항 (2021.09 변경)</a></td>
+                            <td class="date">2021-8-10</td>
+                        </tr> 
+                    </table>
+                </div>
+            </div>
+        </div> 
+        
+        <footer id="footer">
+            <div class="footerArea">
+                <div>
+                    <img src="images/kcp.png" class="kcp" alt="kcp"/>
+                    <a href="https://www.cjlogistics.com/" class="koreaExpress"><img src="images/KoreaExpress.png" alt="KoreaExpress"/></a>
+                    
+                </div> 
+                <section class="guideInfo">     
+                <ul>
+                    <li><b>프레시 마켓</b> 주소: 수원시 권선구 세류동 123-12 세류빌딩 5층</li>
+                    <li>사업자등록번호: 031-234-5678</li>
+                    <li>대표번호: 1661-0000</li>
+                    <li class="email">E-MAIL : <a href="mailto:fresh123@freshMarket.com">fresh123@freshMarket.com</a></li>
+                    <li>고객님은 안전거래를 위해 현금등으로 결제시 저희 쇼핑몰에서 가입한 PG사의 구매안전 서비스를 아용할 수 있습니다. </li>
+                </ul>
+                <p class="copyright">Copyright since &copy; freshMarket.co.kr all right reserved. </p> 
+                </section>
+                <section  class="guideLink">
+                    <h2 class="hidden">사이트 이용안내</h2>
+                    <div class="guide"><a href="#">회사소개</a></div>
+                    <div class="guide"><a href="#">이용약관</a></div>
+                    <div class="guide"><a href="#">광고제휴문의</a></div>
+                    <div class="guide"><a href="#">쇼핑몰 이용안내</a></div>
+                    <div class="guide"><a href="#">고객센터</a></div>
+                    <div class="guide"><a href="#">개인정보취급방침</a></div>
+                    <div class="home"><a href="index.html">HOME</a></div>
+                    <div class="top"><a href="#">TOP</a></div>
+                </section>
+                               
+            </div>
+        </footer>    
+            
+          
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.post_area {
+    width: 960px;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid red;
+    margin-bottom: 30px;
+}
+
+.post_border_top {
+    position: relative;
+    border-top: 1px solid #ECECEC;
+    margin-top: 30px;
+}
+
+.page_location {
+    position: relative;
+    top: -20px;
+    left: 470px;
+    font-size: 13px;
+    color: #8e8e91;
+}
+
+.post_area  table {
+    border: 1px solid #8e8e91;
+    margin: 0 auto;
+    padding: 50px;
+    
+}
+
+.post_area  h1 {
+    position: relative;
+    margin : 20px 0;
+    left: 200px;
+    font-size: 20px;
+}
+
